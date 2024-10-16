@@ -1,0 +1,9 @@
+{% extends "base2.html" %}
+{% block title %}Prueba{% endblock %}
+{% block contenido %}
+    <h2>ejercicios con formularios</h2>
+    <ul>
+        <li><a href="{{url_for('calculadora_post')}}">Calculadora con POST</a></li>
+        <li><a href="{{url_for('calculadora_post_wtf')}}">Calculadora con POST WTF</a></li>
+    </ul>
+{% endblock %}

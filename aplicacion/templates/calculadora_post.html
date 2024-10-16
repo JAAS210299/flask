@@ -1,0 +1,20 @@
+{% extends "base2.html" %}
+{% block title %}Calculadora{% endblock %}
+{% block content %}
+<h2>Calculadora</h2>
+<form action={{url_for("calculadora_post")}} method="post">
+    Número1: <input type="text" name="num1" autofocus required />
+    <br />
+    Número2: <input type="text" name="num2" autofocus required />
+    <br />
+    Operación:
+    <select name="operador" class="form-select" aria-label="Default select example">
+        <option value="1">Suma</option>
+        <option value="2">Resta</option>
+        <option value="3">Multiplicación</option>
+        <option value="4">División</option>
+    </select>
+    <br />
+    <input type="submit" value="Submit!">
+</form>
+{% endblock %}

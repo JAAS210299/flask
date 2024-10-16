@@ -1,0 +1,14 @@
+{% extends "base2.html" %}
+{% block title %}Galeria de imágenes{% endblock %}
+{% block contenido %}
+    <h2>Galería de imágenes</h2>
+
+        {% for list in lista %}
+
+        <img src="{{url_for('static', filename='img/')}}{{list}}">
+        {% endfor %}
+        <br/>
+        <a href="{{url_for('upload')}}">Subir imagen</a>
+        <br/>
+
+{% endblock %}

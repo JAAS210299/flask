@@ -1,8 +1,8 @@
 from aplication.app import app, db
 from aplication.models import Articulos, Categorias
 import os
-from click import echo
-from flask import current_app
+from click import echo 
+from flask import current_app #....
 app.config['DEBUG'] =True
 
 @app.cli.command('drop_database')
