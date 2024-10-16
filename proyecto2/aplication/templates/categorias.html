@@ -1,0 +1,15 @@
+{% extends "base2.html" %}
+{% block title %}Tienda{% endblock %}
+{% block contenido %}
+<div class="container">
+    <div class="row">
+        <h3>Categorias</h3>
+        <div class="list-group">
+            <table class="table table-bordered">
+                <tr><th>Nombre</th></tr>
+                {% for cat in categorias %}<tr><td>{{cat.nombre}}</td></tr>{% endfor %}
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}
